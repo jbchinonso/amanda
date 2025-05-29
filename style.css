@@ -21,6 +21,16 @@ align-items: center;
 padding: 2rem;
 font-size: 1.2rem;
 }
+.logo {
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.logo a {
+text-decoration: none;
+color: #000;
+}
+
 .nav a {
 margin-left: 2rem;
 text-decoration: none;
