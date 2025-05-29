@@ -1,0 +1,327 @@
+/* Reset some basics */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: "Cormorant Garamond", serif;
+font-optical-sizing: auto;
+background-color: #e3e2dd;
+color: #000;
+line-height: 1.6;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 2rem;
+font-size: 1.2rem;
+}
+.nav a {
+margin-left: 2rem;
+text-decoration: none;
+color: #000;
+}
+.icon {
+width: 1rem;
+height: 1rem;
+vertical-align: middle;
+}
+.main-content {
+background-color: #e0dbd1;
+display: flex;
+flex: 1;
+padding: 2rem 4rem;
+gap: 3rem;
+}
+.left-panel {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.portrait {
+width: 100%;
+max-width: 500px;
+object-fit: cover;
+background-color: #000;
+}
+.right-panel {
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.intro {
+font-size: 2.5rem;
+margin-bottom: .5rem;
+}
+hr {
+margin-bottom: 1.5rem;
+border: none;
+height: 1px;
+background-color: #555;
+}
+h1 {
+font-size: 2.5rem;
+font-weight: normal;
+text-align: start;
+}
+h1 strong {
+font-weight: bold;
+}
+h1 em {
+font-style: italic;
+}
+.arrow {
+font-size: 2rem;
+margin-top: 2rem;
+}
+
+/* CONTACT SECTION STYLES */
+.contact-container {
+max-width: 80%;
+width: 100%;
+background-color: #e0dbd1;
+padding: 80px 60px;
+margin: 0 auto;
+}
+
+.contact-header {
+font-size: 32px;
+font-weight: normal;
+font-style: italic;
+margin-bottom: 40px;
+position: relative;
+font-family: "Cormorant Garamond", serif;
+}
+
+.contact-header::after {
+content: '';
+position: absolute;
+bottom: -20px;
+right: 0;
+width: 70%;
+height: 1px;
+background-color: #000;
+}
+
+.contact-description {
+font-size: 48px;
+font-weight: normal;
+line-height: 1.3;
+margin-bottom: 80px;
+margin-top: 60px;
+color: #2c2c2c;
+font-family: "Cormorant Garamond", serif;
+}
+
+.contact-info {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 40px;
+border-top: 1px solid #000;
+position: relative;
+}
+
+.social-icon {
+width: 24px;
+height: 24px;
+border: 2px solid #000;
+border-radius: 3px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+color: #000;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+background-color: #000;
+color: #e0dbd1;
+}
+
+.contact-details {
+display: flex;
+gap: 60px;
+align-items: center;
+}
+
+.email, .phone {
+font-size: 18px;
+color: #000;
+text-decoration: none;
+transition: color 0.3s ease;
+font-family: "Cormorant Garamond", serif;
+}
+
+.email:hover, .phone:hover {
+color: #666;
+}
+
+/* FOOTER STYLES */
+.site-footer {
+background-color: #2d2929;
+color: #fff;
+padding: 3rem 2rem;
+margin-top: 2rem;
+}
+.site-footer .footer-container {
+max-width: 1200px;
+display: flex;
+margin: 0 auto;
+gap: 2rem;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: flex-start;
+}
+.site-footer .footer-left,
+.site-footer .footer-right {
+flex: 1 1 300px;
+margin-bottom: 2rem;
+}
+.site-footer .footer-title {
+font-size: 2rem;
+margin-bottom: 1rem;
+font-family: "Cormorant Garamond", serif;
+}
+.site-footer .footer-text {
+color: #d6d4d4;
+font-size: 1rem;
+line-height: 1.5;
+}
+.site-footer .footer-credit {
+margin-top: 1rem;
+color: #d6d4d4;
+}
+.site-footer .footer-credit a {
+color: #d6d4d4;
+text-decoration: underline;
+}
+.site-footer .footer-form {
+display: flex;
+flex-wrap: wrap;
+gap: 0.5rem;
+}
+.site-footer .footer-input {
+padding: 0.75rem 1rem;
+font-family: "Cormorant Garamond", serif;
+font-size: 1rem;
+border: none;
+outline: none;
+width: 220px;
+}
+.site-footer .footer-button {
+padding: 0.75rem 1.5rem;
+background-color: transparent;
+color: #fff;
+border: 1px solid #fff;
+font-family: "Cormorant Garamond", serif;
+font-size: 1rem;
+cursor: pointer;
+}
+.site-footer .footer-social {
+margin-top: 2rem;
+}
+.site-footer .footer-social a {
+color: #fff;
+text-decoration: none;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+.header {
+flex-direction: column;
+align-items: flex-start;
+padding: 1.5rem;
+ }
+.nav {
+margin-top: 1rem;
+ }
+.nav a {
+margin-left: 1rem;
+font-size: 1rem;
+ }
+.main-content {
+flex-direction: column;
+padding: 2rem;
+ }
+.left-panel, .right-panel {
+width: 100%;
+ }
+.portrait {
+width: 100%;
+max-width: 100%;
+ }
+h1 {
+font-size: 1.8rem;
+ }
+.arrow {
+font-size: 1.5rem;
+margin-top: 1rem;
+ }
+
+/* Contact section mobile styles */
+.contact-container {
+padding: 40px 30px;
+}
+
+.contact-description {
+font-size: 32px;
+margin-bottom: 60px;
+}
+
+.contact-info {
+flex-direction: column;
+gap: 30px;
+align-items: flex-start;
+}
+
+.contact-details {
+flex-direction: column;
+gap: 20px;
+align-items: flex-start;
+}
+
+.contact-header::after {
+width: 100%;
+}
+
+.site-footer .footer-container {
+flex-direction: column;
+text-align: center;
+ }
+.site-footer .footer-form {
+flex-direction: column;
+align-items: center;
+ }
+.site-footer .footer-input {
+width: 100%;
+max-width: 300px;
+ }
+.site-footer .footer-button {
+width: 100%;
+max-width: 300px;
+ }
+.site-footer .footer-social {
+margin-top: 1.5rem;
+ }
+}
+
+/* Additional mobile styles for very small screens */
+@media (max-width: 480px) {
+.contact-description {
+font-size: 24px;
+}
+
+.contact-header {
+font-size: 24px;
+}
+}
